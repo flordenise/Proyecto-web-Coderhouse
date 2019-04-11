@@ -1,0 +1,231 @@
+h1{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 700;
+}
+
+a{
+    color: white;
+    
+}
+.nav {
+    position: sticky; /* sticky es para que el navegador quede fijo */
+    top: 0;
+    z-index: 9999999;
+    font-family: 'Archivo Narrow', sans-serif; color: white;
+    font-weight: 700;
+    text-align: right;/* alinea el bloque de navegacion hacia la derecha */
+    
+}
+.ulnav{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 40%;
+    text-align: center;
+    display: inline-block; /* cambia el comportamiento de bloque de la lista pero deja una al lado de la otra */
+    text-align: center; /* define la alineacion del texto  */
+    position: relative;
+}
+
+.submenu{
+    width: 150px;
+    position: absolute;
+    top:40px;
+    display: none; /* para que no se vea   */
+    list-style: none;
+
+}
+
+.nav ul li:hover .submenu{
+    display: block;
+} /* es para que se vea solo cuando se detiene el cursor  */
+
+
+
+/* nav ul li{
+    border-width: 4px;
+    border-style ;
+
+} para que no se ve afectadas otras li busca en cascada la informacion*/
+
+.header {
+    background-image: url("../img/HEADER.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 900px;
+
+        }
+
+.section2 /* o lo puedo llamar por el id del html #bio*/ {
+    /*background: linear-gradient(45deg, #222, rgb(235, 235, 0), rgb(255, 230, 9) ); */
+    background-color: rgb(233, 196, 32);
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+
+            }
+
+@keyframes titulo_animado{
+    0%{
+        width: 500px;
+    }
+    50%{
+        width: 10px;
+
+    }
+    100%{
+        width: 500px;
+    }
+
+}
+
+.transform {
+    
+    animation-name: titulo_animado;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* transform: translate(100px, 75px);
+       transform: rotate (45deg)
+       transform: scale(1.1) */
+}
+/*.float2{
+    position: absolute;
+    bottom: 140px;
+    left: 150px;
+} esto es para superponer elementos*/
+
+
+.parrafobio{
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: justify;
+        width: 80%;
+        max-width: 1200px;
+        min-width: 400px; /*defino el minimo de ancho */
+        height: auto;
+        /*overflow: scroll; es para que se pueda escrolear si el height es definido por un tamaño fijo; con overflow: auto; lo hace automaticamente */
+        min-height: 200px;
+        padding: 10px;
+        margin: auto;
+        margin-bottom: 25px;  /*margen de la parte inferior, para separar bloques */
+        margin-left: 50px;
+        padding-left: 50px;
+
+       
+    }
+.imagenbio{ /*usando position*/
+   
+    margin-left: 50px;
+    padding-left: 50px;
+    position: relative;
+    top: 20px;
+    right: 50px;
+    
+}
+            
+.section3 {
+    background-color: rgb(255, 255, 255); font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    
+    }
+
+
+.discos{
+    font-family: 'Archivo Narrow', sans-serif;
+    list-style: none;
+    text-align: center;
+    
+}
+.discos li {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 35px;
+    position: relative;
+    transition: all ease 2s; /* es una transicion que dura dos segundos en hacerlo mas suave */
+    /* border-radius: 250px;
+    overflow: hidden;  para poner los bordes redondeados */
+}
+.discos li img{
+    width: 100%;
+    display: block;
+}
+
+.discos li .albums{
+background-color: rgba(0, 0, 0, 0.75) ;
+width: 100%;
+height: 100%;
+color:white;
+position: absolute;
+top: 0;
+line-height: 250px;
+font-size: 20px;
+display: none;
+
+
+}
+
+.discos li:hover{
+    transform: scale(1.1);  /* el hover es el cursor y el transform scale es para agrandar un poquito cuando paso el cursor */
+}
+
+.discos li:hover .albums{
+    display: block;
+
+}
+
+
+.section4 {
+    font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    }
+
+.section5 {
+    background-color: rgb(0, 0, 0); color: white; font-family: 'Archivo Narrow', sans-serif; 
+    text-align: center;
+    width: 100%;
+    height: 600px;
+            }
+
+.worldtour{
+    background-color: rgb(165, 161, 161);
+    color: black;
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    margin: 10px 10px 5px 5px;
+    padding: 10px 10px 5px 5px;
+    text-align: center;
+    
+    
+}
+.section6 {
+    background-color: rgb(233, 196, 32); color: black; font-family: 'Archivo Narrow', sans-serif;
+    text-align: center;
+    height: 300px;
+            }
+h2{
+    font-weight: 700;
+}
+
+            
+
+
+
+
+
+
+
+
+
