@@ -71,7 +71,7 @@ a{
 
             }
 
-@keyframes titulo_animado{
+/*@keyframes titulo_animado{
     0%{
         width: 500px;
     }
@@ -83,7 +83,7 @@ a{
         width: 500px;
     }
 
-}
+} */
 
 .transform {
     
